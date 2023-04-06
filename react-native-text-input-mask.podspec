@@ -10,7 +10,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-    s.name             = package['name']
+    s.name             = 'react-native-text-input-mask'
     s.version          = package['version']
     s.summary          = package['description']
     s.description      = package['description']
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.license          = package['license']
     s.author           = package['author']
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.source           = { :git => 'https://github.com/marcoslucianops/react-native-text-input-mask.git', :branch => 'master' }
+    s.source           = { :git => 'https://github.com/marcoslucianops/react-native-text-input-mask.git' }
     s.platform      = :ios, "10.0"
     s.source_files  = "ios/**/*.{h,m,swift}"
     s.requires_arc  = true
